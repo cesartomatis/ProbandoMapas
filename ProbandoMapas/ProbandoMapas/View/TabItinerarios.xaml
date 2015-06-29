@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProbandoMapas.View.TabItinerarios"
+             Title="Itinerarios">
+  <ListView ItemsSource="{Binding ItineraryList}">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <ViewCell.View>
+            <StackLayout Padding="5, 5, 0, 5"
+                         Orientation="Horizontal"
+                         Spacing="15">
+
+              <Label Text="{Binding ordinalNumber}"/>
+
+              <StackLayout Padding="5, 0, 0, 0"
+                           VerticalOptions="CenterAndExpand"
+                           Orientation="Horizontal"/>
+
+                <Label Text="{Binding ClientName}"
+                       Font="Bold, Medium"
+                       FontSize ="Large"/>
+                <Label Text="{Binding ClientAdress}"
+                       Font="Bold, Medium" />
+
+                <StackLayout Orientation="Horizontal"
+                             Spacing="0">
+                 <Button Text=">"
+                         Font="Bold"
+                         FontSize="Large"
+                         Command="{Binding viewDetails_OnClicked}"/>
+                </StackLayout>
+              </StackLayout>
+            
+          </ViewCell.View>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+</ContentPage>

@@ -9,7 +9,9 @@
     <views:TabMapas />
     <views:TabLocalizacion />
     <views:TabDistancias />
-    
+    <views:TabItinerarios />
+
+
   </TabbedPage.Children>
   
 </TabbedPage>
