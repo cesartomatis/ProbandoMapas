@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProbandoMapas.View.TabMapas"
+             xmlns:viewModels="clr-namespace:ProbandoMapas.ViewModel;assembly=ProbandoMapas"
+             xmlns:maps="clr-namespace:Xam.Plugin.MapExtend.Abstractions;assembly=Xam.Plugin.MapExtend.Abstractions"
+             Title="Mapa">
+
+  <ContentPage.BindingContext>
+    <viewModels:VMClass/>
+  </ContentPage.BindingContext>
+
+  <StackLayout VerticalOptions="Center"
+               Orientation="Vertical"
+               Spacing="10">
+
+    <maps:MapExtend WidthRequest="320"
+              HeightRequest="200"
+              x:Name="Gmaps"
+              IsShowingUser="true"
+              MapType="Hybrid" />
+
+    <Label Text="{Binding AdressLabel}"
+           VerticalOptions="Center"
+           HorizontalOptions="Center" />
+
+    <Entry x:Name="MyAdress" 
+           Placeholder="{Binding MyAdress}"/>
+
+    <Button Text="Pin direction"
+            Clicked="GetDir_OnClicked"/>
+
+    <Entry x:Name="txtOrigen"
+           Placeholder="Ingresar origen..."/>
+
+    <Entry x:Name="txtDestino"
+           Placeholder="Ingresar destino..."/>
+
+    <Button Text="Colocar pines"
+            Clicked="DibujarMapa_OnClicked"/>
+
+    <Label x:Name="lblError"
+           TextColor="Red" 
+           IsVisible="False"/>
+
+
+  </StackLayout>
+  
+</ContentPage>
