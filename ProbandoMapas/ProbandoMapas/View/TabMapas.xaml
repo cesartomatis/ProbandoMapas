@@ -27,7 +27,7 @@
            HorizontalOptions="Center" />
 
     <Entry x:Name="MyAdress" 
-           Placeholder="{Binding MyAdress}"/>
+           Placeholder="Enter your adress here"/>
 
     <Button Text="Pin direction"
             Clicked="GetDir_OnClicked"/>
