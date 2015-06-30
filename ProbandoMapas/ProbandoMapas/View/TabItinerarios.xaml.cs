@@ -8,11 +8,14 @@ using Xamarin.Forms;
 
 namespace ProbandoMapas.View
 {
-    public partial class TabItinerarios : ContentPage
+    public partial class TabItinerarios
     {
         public TabItinerarios()
         {
             InitializeComponent();
+
+            ProbandoMapas.ViewModel.VMListadoItinerarios Listado = new ViewModel.VMListadoItinerarios();
+            Listado.rellenar();
         }
     }
 }

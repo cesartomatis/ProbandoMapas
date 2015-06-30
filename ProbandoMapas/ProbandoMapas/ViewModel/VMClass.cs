@@ -142,6 +142,7 @@ namespace ProbandoMapas.ViewModel
         public ICommand Rellenador { get; set; }
         public ICommand Distancia_Clicked { get; set; }
 
+
         public VMClass()
         {
             plObj = new PosicionamientoLogica();
