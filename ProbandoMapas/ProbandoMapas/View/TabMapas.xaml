@@ -10,6 +10,8 @@
     <viewModels:VMClass/>
   </ContentPage.BindingContext>
 
+  <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+
   <StackLayout VerticalOptions="Center"
                Orientation="Vertical"
                Spacing="10">
@@ -25,7 +27,7 @@
            HorizontalOptions="Center" />
 
     <Entry x:Name="MyAdress" 
-           Placeholder="{Binding MyAdress}"/>
+           Placeholder="Enter your adress here"/>
 
     <Button Text="Pin direction"
             Clicked="GetDir_OnClicked"/>
@@ -43,7 +45,12 @@
            TextColor="Red" 
            IsVisible="False"/>
 
+    <Button Text="Inicio"
+            Clicked="GetStarted_OnClicked"/>
+
+    <Button Text="Fin"
+            Clicked="Finish_OnClicked"/>
 
   </StackLayout>
-  
+  </ScrollView>
 </ContentPage>
