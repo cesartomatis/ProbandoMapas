@@ -13,9 +13,6 @@ namespace ProbandoMapas.View
         public TabItinerarios()
         {
             InitializeComponent();
-
-            ProbandoMapas.ViewModel.VMListadoItinerarios Listado = new ViewModel.VMListadoItinerarios();
-            Listado.rellenar();
         }
     }
 }
