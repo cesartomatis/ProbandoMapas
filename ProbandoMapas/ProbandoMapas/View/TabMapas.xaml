@@ -10,6 +10,8 @@
     <viewModels:VMClass/>
   </ContentPage.BindingContext>
 
+  <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+
   <StackLayout VerticalOptions="Center"
                Orientation="Vertical"
                Spacing="10">
@@ -43,7 +45,12 @@
            TextColor="Red" 
            IsVisible="False"/>
 
+    <Button Text="Inicio"
+            Clicked="GetStarted_OnClicked"/>
+
+    <Button Text="Fin"
+            Clicked="Finish_OnClicked"/>
 
   </StackLayout>
-  
+  </ScrollView>
 </ContentPage>
