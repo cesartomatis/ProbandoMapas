@@ -13,31 +13,25 @@
       <DataTemplate>
         <ViewCell>
           <ViewCell.View>
-            <StackLayout Padding="5, 5, 0, 5"
-                         Orientation="Horizontal"
-                         Spacing="15">
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand">
 
-              <Label Text="{Binding ordinalNumber}"/>
+              <Label Text="1"
+                     VerticalOptions="Center"/>
 
-              <StackLayout Padding="5, 0, 0, 0"
-                           VerticalOptions="CenterAndExpand"
-                           Orientation="Horizontal"/>
+              <StackLayout VerticalOptions="FillAndExpand"
+                           HorizontalOptions="FillAndExpand"
+                           Orientation="Vertical">
 
-                <Label Text="{Binding ClientName}"
-                       Font="Bold, Medium"
-                       FontSize ="Large"/>
-                <Label Text="{Binding ClientAdress}"
-                       Font="Bold, Medium" />
-
-                <StackLayout Orientation="Horizontal"
-                             Spacing="0">
-                 <Button Text=">"
-                         Font="Bold"
-                         FontSize="Large"
-                         Command="{Binding viewDetails_OnClicked}"/>
-                </StackLayout>
+                <Label Text="{Binding Description}"/>
+                <Label Text="{Binding OriginAndress}"/>
               </StackLayout>
-            
+
+              <Button Text=">"
+                      Command="{Binding viewDetails_OnClicked}"/>
+
+            </StackLayout>
           </ViewCell.View>
         </ViewCell>
       </DataTemplate>
