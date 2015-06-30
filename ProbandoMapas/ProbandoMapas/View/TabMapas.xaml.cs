@@ -60,19 +60,19 @@ namespace ProbandoMapas.View
 
             Gmaps.MoveToRegion(MapSpan.FromCenterAndRadius(positionsUno.First(), Distance.FromMiles(0.1)));
 
-            Gmaps.EPins.Add(new PinExtend
-            {
-                Name = "Origen",
-                Location = positionsUno.First(),
-                Details = txtOrigen.Text
-            });
+            //Gmaps.EPins.Add(new PinExtend
+            //{
+            //    Name = "Origen",
+            //    Location = positionsUno.First(),
+            //    Details = txtOrigen.Text
+            //});
 
-            Gmaps.EPins.Add(new PinExtend
-            {
-                Name = "Destino",
-                Location = positionsDos.First(),
-                Details = txtDestino.Text
-            });
+            //Gmaps.EPins.Add(new PinExtend
+            //{
+            //    Name = "Destino",
+            //    Location = positionsDos.First(),
+            //    Details = txtDestino.Text
+            //});
 
             await Gmaps.CreateRoute(positionsUno.First(), positionsDos.First());
         }
