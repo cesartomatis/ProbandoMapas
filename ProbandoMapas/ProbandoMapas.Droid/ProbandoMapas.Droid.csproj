@@ -172,9 +172,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PluginsHelp\GeolocatorReadme.txt" />
-    <Content Include="Properties\AndroidManifest.xml">
+    <None Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProbandoMapas\ProbandoMapas.csproj">
