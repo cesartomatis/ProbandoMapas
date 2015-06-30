@@ -39,11 +39,15 @@
     <Compile Include="Model\PosicionamientoLogica.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\VMClass.cs" />
+    <Compile Include="ViewModel\VMListadoItinerarios.cs" />
     <Compile Include="View\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\TabDistancias.xaml.cs">
       <DependentUpon>TabDistancias.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TabItinerarios.xaml.cs">
+      <DependentUpon>TabItinerarios.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\TabLocalizacion.xaml.cs">
       <DependentUpon>TabLocalizacion.xaml</DependentUpon>
@@ -132,6 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\TabDistancias.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\TabItinerarios.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
