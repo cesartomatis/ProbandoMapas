@@ -46,6 +46,9 @@
     <Compile Include="View\TabDistancias.xaml.cs">
       <DependentUpon>TabDistancias.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\TabItinerario.xaml.cs">
+      <DependentUpon>TabItinerario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\TabItinerarios.xaml.cs">
       <DependentUpon>TabItinerarios.xaml</DependentUpon>
     </Compile>
@@ -142,6 +145,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\TabItinerarios.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\TabItinerario.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
