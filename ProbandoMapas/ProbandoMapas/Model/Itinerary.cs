@@ -11,5 +11,6 @@ namespace ProbandoMapas.Model
         public DateTime OriginTime { get; set; }
         public DateTime FinalTime { get; set; }
         public DateTime ItineraryDay { get; set; }
+        public int IdItinerario { get; set; }
     }
 }
