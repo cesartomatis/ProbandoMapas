@@ -28,7 +28,6 @@ namespace ProbandoMapas.ViewModel
             #region Lista
             ItineraryList = new ObservableCollection<Itinerary>()
             {
-
                 new Itinerary{Description = "Runzheimer Intl.", OriginAndress = "Alvear 1670, Rosario, Santa Fe", FinalAndress = "851 Cornerstone Crossing Waterford, WI 53185, Estados Unidos", ItineraryMiles = 45.0, OriginTime=DateTime.Today, FinalTime=DateTime.Today, ItineraryDay = DateTime.Today, IdItinerario = contador++ },
                 new Itinerary{Description = "Caesar's Palace", OriginAndress = "Alvear 1670, Rosario, Santa Fe", FinalAndress = "Juan A. Maza 3754, Rosario, Argentina", ItineraryMiles = 45.0, OriginTime=DateTime.Today, FinalTime=DateTime.Today, ItineraryDay = DateTime.Today, IdItinerario = contador++ },
                 new Itinerary{Description = "Abel Enterprises", OriginAndress = "Alvear 1670, Rosario, Santa Fe", FinalAndress = "Alem 2276, Rosario, Argentina", ItineraryMiles = 12.233, OriginTime=DateTime.Today, FinalTime=DateTime.Today, ItineraryDay = DateTime.Today, IdItinerario = contador++ },
@@ -44,7 +43,6 @@ namespace ProbandoMapas.ViewModel
                 new Itinerary{Description = "Caesar's Palace", OriginAndress = "Alvear 1670, Rosario, Santa Fe", FinalAndress = "Juan A. Maza 3754, Rosario, Argentina", ItineraryMiles = 45.0, OriginTime=DateTime.Today, FinalTime=DateTime.Today, ItineraryDay = DateTime.Today, IdItinerario = contador++ },
                 new Itinerary{Description = "Abel Enterprises", OriginAndress = "Alvear 1670, Rosario, Santa Fe", FinalAndress = "Alem 2276, Rosario, Argentina", ItineraryMiles = 12.233, OriginTime=DateTime.Today, FinalTime=DateTime.Today, ItineraryDay = DateTime.Today, IdItinerario = contador++ },
                 new Itinerary{Description = "Casino Royale", OriginAndress = "Alvear 1670, Rosario, Santa Fe", FinalAndress = "Bv. Oroño 6300, Rosario, Santa Fe", ItineraryMiles = 45.4, OriginTime=DateTime.Today, FinalTime=DateTime.Today, ItineraryDay = DateTime.Today, IdItinerario = contador++ }
-
 
 
             };
