@@ -14,6 +14,7 @@ namespace ProbandoMapas.ViewModel
 {
     public class VMClass : INotifyPropertyChanged
     {
+        #region Declaracion de variables
         private string _GetCoordsLabel;
         private string _AdressLabel;
         private string _GetAdressLabel;
@@ -90,22 +91,7 @@ namespace ProbandoMapas.ViewModel
                 _PosDos = value;
                 OnPropertyChanged("PosDos");
             }
-        }
-
-        public string MyAdress { get; set; }
-
-        public List<string> LvDatos
-        {
-            get
-            {
-                return _LvLista;
-            }
-            set
-            {
-                _LvLista = value;
-                OnPropertyChanged("LvDatos");
-            }
-        }
+        }        
 
         public string GetCoordsLabel
         {
@@ -115,7 +101,7 @@ namespace ProbandoMapas.ViewModel
                 _GetCoordsLabel = value;
                 OnPropertyChanged("GetCoordsLabel");
             }
-        }
+        }        
 
         public string AdressLabel
         {
@@ -141,16 +127,14 @@ namespace ProbandoMapas.ViewModel
         public ICommand GetAdress { get; set; }
         public ICommand Rellenador { get; set; }
         public ICommand Distancia_Clicked { get; set; }
-
+        #endregion
 
         public VMClass()
         {
             plObj = new PosicionamientoLogica();
-            MyAdress = "Enter your adress here";
 
             GetCoords = new Command(GetCoordsEvent);
             GetAdress = new Command(GetandShowAdress);
-            Rellenador = new Command(GetRellenar);
             Distancia_Clicked = new Command(GetDistancia);
         }
 
@@ -176,13 +160,7 @@ namespace ProbandoMapas.ViewModel
 
             double dMillas = dMtrs * 0.000621371192;
             LblDistanciaMillas = "La distancia en millas es: " + dMillas.ToString();
-        }
-
-        private async void GetRellenar()
-        {
-            var listado = await plObj.GetListado();
-            LvDatos = listado;
-        }       
+        }   
 
         #region INPC
         public void OnPropertyChanged(string propertyName)

@@ -124,6 +124,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="README_FIRST.txt" />
+    <Content Include="accounts.png" />
+    <Content Include="Assets\company.png" />
+    <Content Include="contacts.png" />
+    <Content Include="icon.png" />
+    <Content Include="leads.png" />
+    <Content Include="opportunities.png" />
+    <Content Include="settings.png" />
     <Content Include="SplashScreenImage.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

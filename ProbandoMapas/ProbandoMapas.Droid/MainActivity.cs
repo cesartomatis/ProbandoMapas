@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Graphics.Drawables;
 
 namespace ProbandoMapas.Droid
 {
@@ -20,6 +21,8 @@ namespace ProbandoMapas.Droid
             global::Xamarin.FormsMaps.Init(this, bundle);
             global::Xam.Plugin.MapExtend.Droid.MapExtendRenderer.Init(this, bundle);
             LoadApplication(new App());
+
+            ActionBar.SetIcon(Android.Resource.Color.Transparent);
         }
     }
 }
