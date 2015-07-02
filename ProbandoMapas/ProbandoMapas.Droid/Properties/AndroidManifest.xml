@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<fruta>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.xamarin.probandomapas" android:installLocation="auto">
   <uses-sdk android:minSdkVersion="15" />
   <!-- Google Maps for Android v2 requires OpenGL ES v2 -->
