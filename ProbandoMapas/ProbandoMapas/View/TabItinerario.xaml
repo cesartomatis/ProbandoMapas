@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProbandoMapas.View.TabItinerario"
+             xmlns:viewModels="clr-namespace:ProbandoMapas.ViewModel;assembly=ProbandoMapas"
+             xmlns:maps="clr-namespace:Xam.Plugin.MapExtend.Abstractions;assembly=Xam.Plugin.MapExtend.Abstractions"
+             Title="Itinerario">
+
+  <ContentPage.BindingContext>
+    <viewModels:VMItinerario/>
+  </ContentPage.BindingContext>
+
+  <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+
+    <StackLayout VerticalOptions="Center"
+                 Orientation="Vertical"
+                 Spacing="10">
+
+      <maps:MapExtend WidthRequest="320"
+                HeightRequest="200"
+                x:Name="Gmaps"
+                IsShowingUser="true"
+                MapType="Hybrid" />
+
+      <Label Text="{Binding OriginAdress}"
+             VerticalOptions="Center"
+             HorizontalOptions="Center" />
+
+
+      <Label Text="{Binding FinalAdress}"
+             VerticalOptions="Center"
+             HorizontalOptions="Center" />
+
+      <Button Text="Dibujar camino"
+              Clicked="DibujarMapa_OnClicked"/>
+
+
+      <Label x:Name="lblError"
+             TextColor="Red"
+             IsVisible="False"/>
+
+      <Button Text="Inicio"
+              Clicked="GetStarted_OnClicked"/>
+
+      <Button Text="Fin"
+              Clicked="Finish_OnClicked"/>
+
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
