@@ -5,7 +5,6 @@ using System.Reflection.Emit;
 using System.Text;
 
 using Xamarin.Forms;
-using ProbandoMapas.Model;
 
 namespace ProbandoMapas.View
 {
@@ -14,21 +13,21 @@ namespace ProbandoMapas.View
         Label menuText;
         Image menuImagen;
 
-        public ViewCellExtend() : base()
+        public ViewCellExtend()
         {
             menuText = new Label();
             menuImagen = new Image()
             {
-                //Aspect = Aspect.AspectFit,
-                HeightRequest = 25,
-                WidthRequest = 25
+                Aspect = Aspect.AspectFit,
+                HeightRequest = 30,
+                WidthRequest = 30
             };
 
-            var stContenedor = new StackLayout
+            StackLayout stContenedor = new StackLayout
             {
-                //Orientation = StackOrientation.Horizontal,
-                //HorizontalOptions = LayoutOptions.FillAndExpand,
-                //VerticalOptions = LayoutOptions.FillAndExpand,
+                Orientation = StackOrientation.Horizontal,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
                 Spacing = 20,
                 Children =
                 {
@@ -36,24 +35,25 @@ namespace ProbandoMapas.View
                 }
             };
 
-            stContenedor.SetBinding(Layout.BackgroundColorProperty, new Binding("BackgroundColor"));
-
             View = stContenedor;
         }
 
-        Xamarin.Forms.Layout CreateCellBlock()
+        Xamarin.Forms.View CreateCellBlock()
         {
-            return new StackLayout
+            return new Frame
+            {
+                OutlineColor = Color.Transparent,
+                Content = new StackLayout
                 {
                     Orientation = StackOrientation.Horizontal,
-                    VerticalOptions = LayoutOptions.CenterAndExpand,
+                    VerticalOptions = LayoutOptions.FillAndExpand,
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     Children =
 					{
 					    new StackLayout
 						{
-                            //Padding = new Thickness(15, 0, 0, 10),
-                            HorizontalOptions = LayoutOptions.Center,
+                            //Padding = new Thickness(15,0,10,0),
+                            HorizontalOptions = LayoutOptions.Start,
                             VerticalOptions = LayoutOptions.Center,
 							Children = 
 							{ 
@@ -63,8 +63,8 @@ namespace ProbandoMapas.View
 
 						new StackLayout
 						{
-                            //Padding = new Thickness(0, 0, 0, 0),
-                            HorizontalOptions = LayoutOptions.Center,
+                            //Padding = new Thickness(0,5,10,0),
+                            HorizontalOptions = LayoutOptions.Start,
                             VerticalOptions = LayoutOptions.Center,
 							Children = 
 							{
@@ -72,48 +72,9 @@ namespace ProbandoMapas.View
 							}
 						}
 					}
-                };
+                }
+            };
         }
-
-        //Xamarin.Forms.View CreateCellBlock()
-        //{
-        //    return new Frame
-        //    {
-        //        OutlineColor = Color.Transparent,
-        //        VerticalOptions = LayoutOptions.FillAndExpand,
-        //        HorizontalOptions = LayoutOptions.FillAndExpand,
-        //        Content = new StackLayout
-        //        {
-        //            Orientation = StackOrientation.Horizontal,
-        //            VerticalOptions = LayoutOptions.CenterAndExpand,
-        //            HorizontalOptions = LayoutOptions.FillAndExpand,
-        //            Children =
-        //            {
-        //                new StackLayout
-        //                {
-        //                    //Padding = new Thickness(15, 0, 0, 10),
-        //                    HorizontalOptions = LayoutOptions.Center,
-        //                    VerticalOptions = LayoutOptions.Center,
-        //                    Children = 
-        //                    { 
-        //                        menuImagen
-        //                    }
-        //                },
-
-        //                new StackLayout
-        //                {
-        //                    //Padding = new Thickness(0, 0, 0, 0),
-        //                    HorizontalOptions = LayoutOptions.Center,
-        //                    VerticalOptions = LayoutOptions.Center,
-        //                    Children = 
-        //                    {
-        //                        menuText
-        //                    }
-        //                }
-        //            }
-        //        }
-        //    };
-        //}
 
         public static BindableProperty BindableTextProperty = BindableProperty.Create<ViewCellExtend, string>(ctrl =>
             ctrl.TextProperty,

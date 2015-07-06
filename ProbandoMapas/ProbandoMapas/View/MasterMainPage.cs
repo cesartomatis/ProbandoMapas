@@ -5,35 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-using ProbandoMapas.Model;
-
 namespace ProbandoMapas.View
 {
     public class MasterMainPage : MasterDetailPage
     {
         MainPage mainPage;
-        MenuItem selected;
 
         public MasterMainPage()
         {
             mainPage = new MainPage();
 
-            selected = new MenuItem();
-
-            mainPage.Menu.ItemSelected += (sender, e) =>
-                {
-                    if (selected != null)
-                    {
-                        selected.SetColors(false);
-                    }
-
-                    selected = (e.SelectedItem as MenuItem);
-
-                    selected.SetColors(true);
-
-                    NavigateTo(e.SelectedItem as MenuItem);
-                };
-
+            mainPage.Menu.ItemSelected += (sender, e) => NavigateTo(e.SelectedItem as MenuItem);
             Master = mainPage;
             Detail = new NavigationPage(new WelcomePage());
         }
@@ -47,7 +29,7 @@ namespace ProbandoMapas.View
 
             Detail = new NavigationPage(displayPage);
 
-            //mainPage.Menu.SelectedItem = menu;
+            mainPage.Menu.SelectedItem = menu;
             IsPresented = false;
         }
     }
