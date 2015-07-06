@@ -153,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Renderers\MenuCellRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -173,12 +174,15 @@
   <ItemGroup>
     <Content Include="PluginsHelp\GeolocatorReadme.txt" />
     <AndroidResource Include="Resources\drawable\settings.png" />
-    <AndroidResource Include="Resources\drawable\ic_car_grey600_24dp.png" />
-    <AndroidResource Include="Resources\drawable\ic_clipboard_outline_grey600_24dp.png" />
-    <AndroidResource Include="Resources\drawable\ic_details_grey600_24dp.png" />
-    <AndroidResource Include="Resources\drawable\ic_google_maps_grey600_24dp.png" />
-    <AndroidResource Include="Resources\drawable\ic_home_variant_grey600_24dp.png" />
-    <AndroidResource Include="Resources\drawable\ic_map_marker_multiple_grey600_24dp.png" />
+    <AndroidResource Include="Resources\values-v21\styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\drawable\ic_clipboard_outline_white.png" />
+    <AndroidResource Include="Resources\drawable\ic_details_white.png" />
+    <AndroidResource Include="Resources\drawable\ic_google_maps_white.png" />
+    <AndroidResource Include="Resources\drawable\ic_home_variant_white.png" />
+    <AndroidResource Include="Resources\drawable\ic_map_marker_multiple_white.png" />
     <None Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </None>

@@ -10,7 +10,7 @@ using Android.Graphics.Drawables;
 
 namespace ProbandoMapas.Droid
 {
-    [Activity(Label = "ProbandoMapas", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Runzheimer International", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -22,6 +22,7 @@ namespace ProbandoMapas.Droid
             global::Xam.Plugin.MapExtend.Droid.MapExtendRenderer.Init(this, bundle);
             LoadApplication(new App());
 
+            Window.AddFlags(WindowManagerFlags.DrawsSystemBarBackgrounds);
             ActionBar.SetIcon(Android.Resource.Color.Transparent);
         }
     }

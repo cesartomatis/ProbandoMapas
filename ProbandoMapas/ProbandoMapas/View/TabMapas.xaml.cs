@@ -30,7 +30,6 @@ namespace ProbandoMapas.View
             start = true;
             l = new DateTime();
             lstPos = new List<Position>();
-            polilenes = new ObservableRangeCollection<Position>();
         }
 
         private async void GetDir_OnClicked(object sender, EventArgs args)
@@ -92,7 +91,7 @@ namespace ProbandoMapas.View
         {
             l = DateTime.Now;
 
-            var locator = CrossGeolocator.Current;                
+            var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 5;
             var position = await locator.GetPositionAsync(timeout: 10000);
 
@@ -129,7 +128,7 @@ namespace ProbandoMapas.View
 
         private async void Finish_OnClicked(object sender, EventArgs args)
         {
-            var locator = CrossGeolocator.Current;                
+            var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 5;
             var position = await locator.GetPositionAsync(timeout: 10000);
 
@@ -142,11 +141,6 @@ namespace ProbandoMapas.View
                 Name = "Destino",
                 Location = pos1,
                 Details = "Direccion de destino"
-            });
-
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                polilenes.AddRange(lstPos);
             });
         }
     }

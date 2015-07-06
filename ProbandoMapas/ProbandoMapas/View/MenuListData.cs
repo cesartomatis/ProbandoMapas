@@ -1,8 +1,6 @@
 ﻿using System;
+using Xamarin.Forms;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProbandoMapas.View
 {
@@ -12,36 +10,36 @@ namespace ProbandoMapas.View
         {
             this.Add(new MenuItem()
             {
-                Title = "Main Page",
-                IconSource = "ic_home_variant_grey600_24dp.png",                
+                Title = "Dashboard",
+                IconSource = ImageSource.FromFile("ic_home_variant_white.png"),                
                 TargetType = typeof(WelcomePage)
             });
 
             this.Add(new MenuItem()
             {
                 Title = "Map",
-                IconSource = "ic_google_maps_grey600_24dp.png",
+                IconSource = ImageSource.FromFile("ic_google_maps_white.png"),
                 TargetType = typeof(TabMapas)
             });
 
             this.Add(new MenuItem()
             {
                 Title = "Locations",
-                IconSource = "ic_details_grey600_24dp.png",
+                IconSource = ImageSource.FromFile("ic_details_white.png"),
                 TargetType = typeof(TabLocalizacion)
             });
 
             this.Add(new MenuItem()
             {
                 Title = "Distances",
-                IconSource = "ic_map_marker_multiple_grey600_24dp.png",
+                IconSource = ImageSource.FromFile("ic_map_marker_multiple_white.png"),
                 TargetType = typeof(TabDistancias)
             });
 
             this.Add(new MenuItem()
             {
                 Title = "Itineraries",
-                IconSource = "ic_clipboard_outline_grey600_24dp.png",
+                IconSource = ImageSource.FromFile("ic_clipboard_outline_white.png"),
                 TargetType = typeof(TabItinerarios)
             });
         }

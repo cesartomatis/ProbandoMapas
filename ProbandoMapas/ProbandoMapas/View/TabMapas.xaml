@@ -12,45 +12,45 @@
 
   <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
 
-  <StackLayout VerticalOptions="Center"
-               Orientation="Vertical"
-               Spacing="10">
+    <StackLayout VerticalOptions="Center"
+                 Orientation="Vertical"
+                 Spacing="10">
 
-    <maps:MapExtend WidthRequest="320"
-              HeightRequest="200"
-              x:Name="Gmaps"
-              IsShowingUser="true"
-              MapType="Hybrid" />
+      <maps:MapExtend WidthRequest="320"
+                HeightRequest="200"
+                x:Name="Gmaps"
+                IsShowingUser="true"
+                MapType="Hybrid" />
 
-    <Label Text="{Binding AdressLabel}"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+      <Label Text="{Binding AdressLabel}"
+             VerticalOptions="Center"
+             HorizontalOptions="Center" />
 
-    <Entry x:Name="MyAdress" 
-           Placeholder="Enter your adress here"/>
+      <Entry x:Name="MyAdress"
+             Placeholder="Enter your adress here"/>
 
-    <Button Text="Pin direction"
-            Clicked="GetDir_OnClicked"/>
+      <Button Text="Pin direction"
+              Clicked="GetDir_OnClicked"/>
 
-    <Entry x:Name="txtOrigen"
-           Placeholder="Ingresar origen..."/>
+      <Entry x:Name="txtOrigen"
+             Placeholder="Ingresar origen..."/>
 
-    <Entry x:Name="txtDestino"
-           Placeholder="Ingresar destino..."/>
+      <Entry x:Name="txtDestino"
+             Placeholder="Ingresar destino..."/>
 
-    <Button Text="Colocar pines"
-            Clicked="DibujarMapa_OnClicked"/>
+      <Button Text="Colocar pines"
+              Clicked="DibujarMapa_OnClicked"/>
 
-    <Label x:Name="lblError"
-           TextColor="Red" 
-           IsVisible="False"/>
+      <Label x:Name="lblError"
+             TextColor="Red"
+             IsVisible="False"/>
 
-    <Button Text="Inicio"
-            Clicked="GetStarted_OnClicked"/>
+      <Button Text="Inicio"
+              Clicked="GetStarted_OnClicked"/>
 
-    <Button Text="Fin"
-            Clicked="Finish_OnClicked"/>
+      <Button Text="Fin"
+              Clicked="Finish_OnClicked"/>
 
-  </StackLayout>
+    </StackLayout>
   </ScrollView>
 </ContentPage>

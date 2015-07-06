@@ -101,7 +101,7 @@ namespace ProbandoMapas.ViewModel
                 _GetCoordsLabel = value;
                 OnPropertyChanged("GetCoordsLabel");
             }
-        }        
+        }
 
         public string AdressLabel
         {

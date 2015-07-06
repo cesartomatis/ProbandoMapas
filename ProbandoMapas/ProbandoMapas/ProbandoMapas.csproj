@@ -46,7 +46,6 @@
     </Compile>
     <Compile Include="View\MasterMainPage.cs" />
     <Compile Include="View\MenuCell.cs" />
-    <Compile Include="View\CustomViewCell.cs" />
     <Compile Include="View\MenuItem.cs" />
     <Compile Include="View\MenuListData.cs" />
     <Compile Include="View\MenuListView.cs" />
@@ -65,6 +64,7 @@
     <Compile Include="View\TabMapas.xaml.cs">
       <DependentUpon>TabMapas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\ViewCellExtend.cs" />
     <Compile Include="View\WelcomePage.cs" />
   </ItemGroup>
   <ItemGroup>

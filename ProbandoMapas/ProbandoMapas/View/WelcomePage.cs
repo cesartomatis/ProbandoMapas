@@ -11,7 +11,7 @@ namespace ProbandoMapas.View
     {
         public WelcomePage()
 		{
-            Title = "Runzheimer International";
+            Title = "Dashboard";
             //Icon = " ";
 		}
     }

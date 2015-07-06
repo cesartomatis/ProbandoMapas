@@ -887,29 +887,29 @@ namespace ProbandoMapas.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0b0055
-			public const int abc_background_cache_hint_selector_material_dark = 2131427413;
+			// aapt resource value: 0x7f0b005a
+			public const int abc_background_cache_hint_selector_material_dark = 2131427418;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int abc_background_cache_hint_selector_material_light = 2131427414;
+			// aapt resource value: 0x7f0b005b
+			public const int abc_background_cache_hint_selector_material_light = 2131427419;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int abc_input_method_navigation_guard = 2131427328;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int abc_primary_text_disable_only_material_dark = 2131427415;
+			// aapt resource value: 0x7f0b005c
+			public const int abc_primary_text_disable_only_material_dark = 2131427420;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int abc_primary_text_disable_only_material_light = 2131427416;
+			// aapt resource value: 0x7f0b005d
+			public const int abc_primary_text_disable_only_material_light = 2131427421;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int abc_primary_text_material_dark = 2131427417;
+			// aapt resource value: 0x7f0b005e
+			public const int abc_primary_text_material_dark = 2131427422;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int abc_primary_text_material_light = 2131427418;
+			// aapt resource value: 0x7f0b005f
+			public const int abc_primary_text_material_light = 2131427423;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int abc_search_url_text = 2131427419;
+			// aapt resource value: 0x7f0b0060
+			public const int abc_search_url_text = 2131427424;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int abc_search_url_text_normal = 2131427329;
@@ -920,11 +920,11 @@ namespace ProbandoMapas.Droid
 			// aapt resource value: 0x7f0b0003
 			public const int abc_search_url_text_selected = 2131427331;
 			
-			// aapt resource value: 0x7f0b005c
-			public const int abc_secondary_text_material_dark = 2131427420;
+			// aapt resource value: 0x7f0b0061
+			public const int abc_secondary_text_material_dark = 2131427425;
 			
-			// aapt resource value: 0x7f0b005d
-			public const int abc_secondary_text_material_light = 2131427421;
+			// aapt resource value: 0x7f0b0062
+			public const int abc_secondary_text_material_light = 2131427426;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int accent_material_dark = 2131427332;
@@ -998,8 +998,8 @@ namespace ProbandoMapas.Droid
 			// aapt resource value: 0x7f0b0053
 			public const int calendar_text_selected = 2131427411;
 			
-			// aapt resource value: 0x7f0b005e
-			public const int calendar_text_selector = 2131427422;
+			// aapt resource value: 0x7f0b0063
+			public const int calendar_text_selector = 2131427427;
 			
 			// aapt resource value: 0x7f0b0054
 			public const int calendar_text_unselectable = 2131427412;
@@ -1034,11 +1034,11 @@ namespace ProbandoMapas.Droid
 			// aapt resource value: 0x7f0b0038
 			public const int common_signin_btn_light_text_pressed = 2131427384;
 			
-			// aapt resource value: 0x7f0b005f
-			public const int common_signin_btn_text_dark = 2131427423;
+			// aapt resource value: 0x7f0b0064
+			public const int common_signin_btn_text_dark = 2131427428;
 			
-			// aapt resource value: 0x7f0b0060
-			public const int common_signin_btn_text_light = 2131427424;
+			// aapt resource value: 0x7f0b0065
+			public const int common_signin_btn_text_light = 2131427429;
 			
 			// aapt resource value: 0x7f0b0012
 			public const int dim_foreground_disabled_material_dark = 2131427346;
@@ -1084,6 +1084,21 @@ namespace ProbandoMapas.Droid
 			
 			// aapt resource value: 0x7f0b0020
 			public const int material_deep_teal_500 = 2131427360;
+			
+			// aapt resource value: 0x7f0b0055
+			public const int my_blue = 2131427413;
+			
+			// aapt resource value: 0x7f0b0058
+			public const int my_darkerred = 2131427416;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int my_grey = 2131427417;
+			
+			// aapt resource value: 0x7f0b0056
+			public const int my_red = 2131427414;
+			
+			// aapt resource value: 0x7f0b0057
+			public const int my_white = 2131427415;
 			
 			// aapt resource value: 0x7f0b0021
 			public const int primary_dark_material_dark = 2131427361;
@@ -1133,11 +1148,11 @@ namespace ProbandoMapas.Droid
 			// aapt resource value: 0x7f0b0030
 			public const int switch_thumb_disabled_material_light = 2131427376;
 			
-			// aapt resource value: 0x7f0b0061
-			public const int switch_thumb_material_dark = 2131427425;
+			// aapt resource value: 0x7f0b0066
+			public const int switch_thumb_material_dark = 2131427430;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int switch_thumb_material_light = 2131427426;
+			// aapt resource value: 0x7f0b0067
+			public const int switch_thumb_material_light = 2131427431;
 			
 			// aapt resource value: 0x7f0b0031
 			public const int switch_thumb_normal_material_dark = 2131427377;
@@ -1184,11 +1199,11 @@ namespace ProbandoMapas.Droid
 			// aapt resource value: 0x7f0b0049
 			public const int wallet_link_text_light = 2131427401;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int wallet_primary_text_holo_light = 2131427427;
+			// aapt resource value: 0x7f0b0068
+			public const int wallet_primary_text_holo_light = 2131427432;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int wallet_secondary_text_holo_dark = 2131427428;
+			// aapt resource value: 0x7f0b0069
+			public const int wallet_secondary_text_holo_dark = 2131427433;
 			
 			static Color()
 			{
@@ -1700,103 +1715,100 @@ namespace ProbandoMapas.Droid
 			public const int common_signin_btn_text_pressed_light = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int ic_car_grey600_24dp = 2130837591;
+			public const int ic_clipboard_outline_white = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int ic_clipboard_outline_grey600_24dp = 2130837592;
+			public const int ic_details_white = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int ic_details_grey600_24dp = 2130837593;
+			public const int ic_google_maps_white = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int ic_google_maps_grey600_24dp = 2130837594;
+			public const int ic_home_variant_white = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int ic_home_variant_grey600_24dp = 2130837595;
+			public const int ic_map_marker_multiple_white = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_map_marker_multiple_grey600_24dp = 2130837596;
+			public const int ic_plusone_medium_off_client = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_plusone_medium_off_client = 2130837597;
+			public const int ic_plusone_small_off_client = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_plusone_small_off_client = 2130837598;
+			public const int ic_plusone_standard_off_client = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_plusone_standard_off_client = 2130837599;
+			public const int ic_plusone_tall_off_client = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_plusone_tall_off_client = 2130837600;
+			public const int icon = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int icon = 2130837601;
+			public const int monoandroidsplash = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int monoandroidsplash = 2130837602;
+			public const int mr_ic_audio_vol = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int mr_ic_audio_vol = 2130837603;
+			public const int mr_ic_media_route_connecting_holo_dark = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int mr_ic_media_route_connecting_holo_dark = 2130837604;
+			public const int mr_ic_media_route_connecting_holo_light = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int mr_ic_media_route_connecting_holo_light = 2130837605;
+			public const int mr_ic_media_route_disabled_holo_dark = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int mr_ic_media_route_disabled_holo_dark = 2130837606;
+			public const int mr_ic_media_route_disabled_holo_light = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int mr_ic_media_route_disabled_holo_light = 2130837607;
+			public const int mr_ic_media_route_holo_dark = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int mr_ic_media_route_holo_dark = 2130837608;
+			public const int mr_ic_media_route_holo_light = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int mr_ic_media_route_holo_light = 2130837609;
+			public const int mr_ic_media_route_off_holo_dark = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int mr_ic_media_route_off_holo_dark = 2130837610;
+			public const int mr_ic_media_route_off_holo_light = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int mr_ic_media_route_off_holo_light = 2130837611;
+			public const int mr_ic_media_route_on_0_holo_dark = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int mr_ic_media_route_on_0_holo_dark = 2130837612;
+			public const int mr_ic_media_route_on_0_holo_light = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int mr_ic_media_route_on_0_holo_light = 2130837613;
+			public const int mr_ic_media_route_on_1_holo_dark = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int mr_ic_media_route_on_1_holo_dark = 2130837614;
+			public const int mr_ic_media_route_on_1_holo_light = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int mr_ic_media_route_on_1_holo_light = 2130837615;
+			public const int mr_ic_media_route_on_2_holo_dark = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int mr_ic_media_route_on_2_holo_dark = 2130837616;
+			public const int mr_ic_media_route_on_2_holo_light = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int mr_ic_media_route_on_2_holo_light = 2130837617;
+			public const int mr_ic_media_route_on_holo_dark = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int mr_ic_media_route_on_holo_dark = 2130837618;
-			
-			// aapt resource value: 0x7f020073
-			public const int mr_ic_media_route_on_holo_light = 2130837619;
-			
-			// aapt resource value: 0x7f020077
-			public const int notification_template_icon_bg = 2130837623;
-			
-			// aapt resource value: 0x7f020074
-			public const int powered_by_google_dark = 2130837620;
-			
-			// aapt resource value: 0x7f020075
-			public const int powered_by_google_light = 2130837621;
+			public const int mr_ic_media_route_on_holo_light = 2130837618;
 			
 			// aapt resource value: 0x7f020076
-			public const int settings = 2130837622;
+			public const int notification_template_icon_bg = 2130837622;
+			
+			// aapt resource value: 0x7f020073
+			public const int powered_by_google_dark = 2130837619;
+			
+			// aapt resource value: 0x7f020074
+			public const int powered_by_google_light = 2130837620;
+			
+			// aapt resource value: 0x7f020075
+			public const int settings = 2130837621;
 			
 			static Drawable()
 			{
@@ -3006,6 +3018,9 @@ namespace ProbandoMapas.Droid
 			
 			// aapt resource value: 0x7f070131
 			public const int Mono_Android_Theme_Splash = 2131165489;
+			
+			// aapt resource value: 0x7f070132
+			public const int MyCustomTheme = 2131165490;
 			
 			// aapt resource value: 0x7f070014
 			public const int Platform_AppCompat = 2131165204;

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+using ProbandoMapas.Model;
+
 namespace ProbandoMapas.View
 {
     public class MenuListView : ListView
@@ -18,11 +20,16 @@ namespace ProbandoMapas.View
             BackgroundColor = Color.Transparent;
             SeparatorVisibility = SeparatorVisibility.None;
 
-            var cell = new DataTemplate(typeof(MenuCell));
-            //cell.SetBinding(MenuCell.TextProperty, "Title");
-            //cell.SetBinding(MenuCell.ImageSourceProperty, "IconSource");
+            var cell = new DataTemplate(typeof(ViewCellExtend));
+            cell.SetBinding(ViewCellExtend.BindableTextProperty, "Title");
+            cell.SetBinding(ViewCellExtend.BindableImageProperty, "IconSource");
 
             ItemTemplate = cell;
+        }
+
+        public Object OnItemSelected(object sender, ItemTappedEventArgs args) 
+        {
+            return this.SelectedItem;
         }
     }
 }

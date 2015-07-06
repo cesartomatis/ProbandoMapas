@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <!-- Inherit from the light Material Theme -->
+  <style name="MyCustomTheme" parent="android:Theme.Material">
+    <!-- Override the app bar color -->
+    <item name="android:colorPrimary">@color/my_red</item>
+    <!-- Override the color of UI controls -->
+    <item name="android:colorAccent">@color/my_blue</item>
+    <!-- Override the color of UI text in the app bar. -->
+    <item name="android:textColorPrimary">@color/my_white</item>
+    <!-- Override the color of the status bar and contextual app bars; this is normally a dark version of colorPrimary -->
+    <item name="android:colorPrimaryDark">@color/my_darkerred</item>
+    <!-- Override the color of the status bar. -->
+    <item name="android:statusBarColor">@color/my_darkerred</item>
+    <!-- Override the color of the screen background -->
+    <!--<item name="android:windowBackground">@color/my_grey</item>-->
+  </style>
+</resources>
