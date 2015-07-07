@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ImageCircle.Forms.Plugin.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace ProbandoMapas.View
     public class MainPage : ContentPage
     {
         public ListView Menu { get; set; }
+        CircleImage menuImage;
+        Label menuLabel;
 
         public MainPage()
         {
@@ -19,25 +22,73 @@ namespace ProbandoMapas.View
 
             Menu = new MenuListView();
 
-            var menuLabel = new ContentView
+            menuImage = new CircleImage
             {
-                Padding = new Thickness(10, 36, 0, 5),
-                Content = new Label
-                {
-                    TextColor = Color.FromHex("AAAAAA"),
-                    Text = "Menu",
-                }
+                BorderColor = Color.White,
+                BorderThickness = 3,
+                HeightRequest = 75,
+                WidthRequest = 75,
+                Aspect = Aspect.AspectFill,
+                HorizontalOptions = LayoutOptions.Start,
+                Source = UriImageSource.FromFile("fotoperfil.png")
             };
 
-            var layout = new StackLayout
+            menuLabel = new Label
+            {
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
+                FontAttributes = FontAttributes.Bold,
+                Text = "Pablo Gil",
+            };
+
+            StackLayout stContendorGral = new StackLayout
             {
                 Spacing = 0,
-                VerticalOptions = LayoutOptions.FillAndExpand
+                Orientation = StackOrientation.Vertical,
             };
-            //layout.Children.Add(menuLabel);
-            layout.Children.Add(Menu);
 
-            Content = layout;
+            stContendorGral.Children.Add(CreateMenuBlock());
+            stContendorGral.Children.Add(Menu);
+
+            Content = stContendorGral;
+        }
+
+
+        Xamarin.Forms.View CreateMenuBlock()
+        {
+            return new Frame
+            {
+                OutlineColor = Color.Transparent,
+                Content = new StackLayout
+                {
+                    Orientation = StackOrientation.Horizontal,
+                    VerticalOptions = LayoutOptions.FillAndExpand,
+                    HorizontalOptions = LayoutOptions.FillAndExpand,
+                    Children =
+					{
+                        new StackLayout
+						{
+                            //Padding = new Thickness(15,0,10,0),
+                            HorizontalOptions = LayoutOptions.Start,
+                            VerticalOptions = LayoutOptions.Center,
+							Children = 
+							{ 
+                                menuImage
+							}
+						},
+
+						new StackLayout
+						{
+                            //Padding = new Thickness(0,5,10,0),
+                            HorizontalOptions = LayoutOptions.CenterAndExpand,
+                            VerticalOptions = LayoutOptions.Center,
+							Children = 
+							{
+								menuLabel
+							}
+						}
+					}
+                }
+            };
         }
     }
 }
