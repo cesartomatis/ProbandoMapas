@@ -22,12 +22,14 @@
                 IsShowingUser="true"
                 MapType="Hybrid" />
 
-      <Label Text="{Binding OriginAdress}"
+      <Label Text="{Binding Origin}"
+             x:Name="Origin"
              VerticalOptions="Center"
              HorizontalOptions="Center" />
 
 
-      <Label Text="{Binding FinalAdress}"
+      <Label Text="{Binding Destination}"
+             x:Name="Destination"
              VerticalOptions="Center"
              HorizontalOptions="Center" />
 
