@@ -191,6 +191,8 @@
     <AndroidResource Include="Resources\drawable\ic_google_maps_white.png" />
     <AndroidResource Include="Resources\drawable\ic_home_variant_white.png" />
     <AndroidResource Include="Resources\drawable\ic_map_marker_multiple_white.png" />
+    <AndroidResource Include="Resources\drawable\exit_to_app.png" />
+    <AndroidResource Include="Resources\drawable\fotoperfil.png" />
     <None Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </None>
