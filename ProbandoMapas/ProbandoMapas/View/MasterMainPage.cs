@@ -15,7 +15,22 @@ namespace ProbandoMapas.View
         {
             mainPage = new MainPage();
 
-            mainPage.Menu.ItemSelected += (sender, e) => NavigateTo(e.SelectedItem as MenuItem);
+            var selected = new MenuItem();
+            mainPage.Menu.ItemSelected += (sender, e) =>
+            {
+                // Deselect previous
+                if (selected != null)
+                {
+                    selected.SetColors(false);
+                }
+
+                // Select new
+                selected = (e.SelectedItem as MenuItem);
+                selected.SetColors(true);
+
+                NavigateTo(e.SelectedItem as MenuItem);
+            };
+
             Master = mainPage;
             Detail = new NavigationPage(new WelcomePage());
         }

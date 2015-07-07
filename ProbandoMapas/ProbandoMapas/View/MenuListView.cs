@@ -18,7 +18,8 @@ namespace ProbandoMapas.View
             ItemsSource = data;
             VerticalOptions = LayoutOptions.FillAndExpand;
             BackgroundColor = Color.Transparent;
-            SeparatorVisibility = SeparatorVisibility.None;
+            SeparatorVisibility = SeparatorVisibility.Default;
+            SeparatorColor = Color.Transparent;
 
             var cell = new DataTemplate(typeof(ViewCellExtend));
             cell.SetBinding(ViewCellExtend.BindableTextProperty, "Title");
