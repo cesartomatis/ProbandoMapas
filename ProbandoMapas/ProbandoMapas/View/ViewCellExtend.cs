@@ -35,45 +35,47 @@ namespace ProbandoMapas.View
                 }
             };
 
+            //stContenedor.SetBinding(Layout.BackgroundColorProperty, new Binding("BackgroundColor"));
+
             View = stContenedor;
         }
 
-        Xamarin.Forms.View CreateCellBlock()
+        Xamarin.Forms.Layout CreateCellBlock()
         {
-            return new Frame
+            StackLayout st2 = new StackLayout
             {
-                OutlineColor = Color.Transparent,
-                Content = new StackLayout
-                {
-                    Orientation = StackOrientation.Horizontal,
-                    VerticalOptions = LayoutOptions.FillAndExpand,
-                    HorizontalOptions = LayoutOptions.FillAndExpand,
-                    Children =
+                Orientation = StackOrientation.Horizontal,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                Children =
+				{
+				    new StackLayout
 					{
-					    new StackLayout
-						{
-                            //Padding = new Thickness(15,0,10,0),
-                            HorizontalOptions = LayoutOptions.Start,
-                            VerticalOptions = LayoutOptions.Center,
-							Children = 
-							{ 
-                                menuImagen
-							}
-						},
+                        Padding = new Thickness(15,0,10,0),
+                        HorizontalOptions = LayoutOptions.Start,
+                        VerticalOptions = LayoutOptions.Center,
+				    	Children = 
+						{ 
+                            menuImagen
+						}
+					},
 
-						new StackLayout
+					new StackLayout
+					{
+                        Padding = new Thickness(0,5,10,0),
+                        HorizontalOptions = LayoutOptions.Start,
+                        VerticalOptions = LayoutOptions.Center,
+					    Children = 
 						{
-                            //Padding = new Thickness(0,5,10,0),
-                            HorizontalOptions = LayoutOptions.Start,
-                            VerticalOptions = LayoutOptions.Center,
-							Children = 
-							{
-								menuText
-							}
+							menuText
 						}
 					}
-                }
+				}
             };
+
+            st2.SetBinding(Layout.BackgroundColorProperty, new Binding("BackgroundColor"));
+
+            return st2;
         }
 
         public static BindableProperty BindableTextProperty = BindableProperty.Create<ViewCellExtend, string>(ctrl =>

@@ -10,17 +10,25 @@
     <viewModels:VMClass/>
   </ContentPage.BindingContext>
 
+  <StackLayout Orientation="Vertical">
+    
+    <maps:MapExtend WidthRequest="320"
+                HeightRequest="200"
+                x:Name="Gmaps"
+                IsShowingUser="true"
+                MapType="Hybrid" />
+
   <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
 
     <StackLayout VerticalOptions="Center"
                  Orientation="Vertical"
                  Spacing="10">
 
-      <maps:MapExtend WidthRequest="320"
+      <!--<maps:MapExtend WidthRequest="320"
                 HeightRequest="200"
                 x:Name="Gmaps"
                 IsShowingUser="true"
-                MapType="Hybrid" />
+                MapType="Hybrid" />-->
 
       <Label Text="{Binding AdressLabel}"
              VerticalOptions="Center"
@@ -53,4 +61,7 @@
 
     </StackLayout>
   </ScrollView>
+    
+    
+  </StackLayout>
 </ContentPage>
