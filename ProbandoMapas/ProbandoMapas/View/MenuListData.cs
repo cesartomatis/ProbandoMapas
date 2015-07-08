@@ -33,7 +33,7 @@ namespace ProbandoMapas.View
             {
                 Title = "Distances",
                 IconSource = ImageSource.FromFile("ic_map_marker_multiple_white.png"),
-                TargetType = typeof(TabDistancias)
+                TargetType = typeof(DistanciasPage)
             });
 
             this.Add(new MenuItem()

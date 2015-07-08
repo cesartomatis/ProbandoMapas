@@ -20,11 +20,7 @@
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<application android:label="AAJMaps" android:theme="@style/MyCustomTheme">
 		<!-- Put your Google Maps V2 API Key here. -->
-<<<<<<< HEAD
 		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDD1Anni4BmYTAgRSk1aVbWYEhuDFy71ZU" />
-=======
-		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDCdVdSC2TuPgbkXKnQc5htKfqEbQ0T-9s" />
->>>>>>> 33ffe52085efbdf3ea5ca3b7daa1dada73bb44e8
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 	</application>
 </manifest>
