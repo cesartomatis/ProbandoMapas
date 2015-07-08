@@ -27,10 +27,5 @@ namespace ProbandoMapas.View
 
             ItemTemplate = cell;
         }
-
-        public Object OnItemSelected(object sender, ItemTappedEventArgs args) 
-        {
-            return this.SelectedItem;
-        }
     }
 }
