@@ -15,7 +15,7 @@ namespace ProbandoMapas.ViewModel
 {
     public class VMListadoItinerarios: INotifyPropertyChanged
     {
-        public ObservableCollection<Itinerary> ItineraryList { get; set; }
+        public static ObservableCollection<Itinerary> ItineraryList { get; set; }
 
         public ICommand viewDetails_OnClicked { get; set; }
         
