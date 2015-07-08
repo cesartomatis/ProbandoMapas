@@ -50,6 +50,16 @@ namespace ProbandoMapas.View
                 Longitude = finalPosition.First().Longitude
             };
 
+
+            /*Este código, teniendo en cuenta el radio promedio de la tierra,
+             * calcula el punto medio entre dos lugares del mundo dadas sus 
+             * coordenadas y centra el mapa en ese lugar. El radio del MapSpan
+             * esta dado por la distancia entre ellos. Le sumo 0.2 KM para
+             * que no queden muy pegados al borde de la pantalla.
+             * Las distancias están todas expresadas en el sistema métrico
+             * y por ninguna razón se debería usar este código para realizar 
+             * cálculos fuera de los necesarios para la geolocalización y geodesia.
+             * */
             var radioTierra = 6371000; //metros
             var latitud1Radianes = pos1.Latitude * (Math.PI / 180.0);
             var latitud2Radianes = pos2.Latitude * (Math.PI / 180.0);
@@ -58,7 +68,8 @@ namespace ProbandoMapas.View
 
             var deltaLatitud = (pos2.Latitude - pos1.Latitude) * (Math.PI / 180.0);
             var deltaLongitud = (pos2.Longitude - pos1.Longitude) * (Math.PI / 180.0);
-         
+
+
             var sumando1 = Math.Sin(deltaLatitud / 2) * Math.Sin(deltaLatitud / 2);
             var sumando2 = Math.Cos(latitud1Radianes) * Math.Cos(latitud2Radianes) * Math.Sin(deltaLongitud / 2) * Math.Sin(deltaLongitud / 2);
             List<double> sumandos = new List<double>();
@@ -78,7 +89,10 @@ namespace ProbandoMapas.View
             var λ3 = longitud1Radianes + Math.Atan2(By, Math.Cos(longitud1Radianes) + Bx);//Longitud del punto medio
 
             var centro = new Xamarin.Forms.Maps.Position(φ3, λ3);
-            Distance distancia = new Xamarin.Forms.Maps.Distance(distance);
+            Distance distancia = new Xamarin.Forms.Maps.Distance(distance + 0.2);
+
+            Gmaps.MoveToRegion(MapSpan.FromCenterAndRadius(centro, distancia));
+            /*************esto de acá arriba deberia estar en un metodo en otro lado, el View Model por ejemplo*********************/
 
             Gmaps.MoveToRegion(MapSpan.FromCenterAndRadius(centro, distancia));
 

@@ -18,6 +18,7 @@ namespace ProbandoMapas.ViewModel
         public ObservableCollection<Itinerary> ItineraryList { get; set; }
 
         public ICommand viewDetails_OnClicked { get; set; }
+        
 
         int contador = 1;
 
@@ -51,6 +52,7 @@ namespace ProbandoMapas.ViewModel
 
         private async void getDetails()
         {
+            
 
         }
 
