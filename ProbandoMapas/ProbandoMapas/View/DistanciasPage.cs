@@ -16,6 +16,8 @@ namespace ProbandoMapas.View
 
         public DistanciasPage()
         {
+            this.BindingContext = new ViewModel.VMClass();
+
             initConfig();
 
             StackLayout stContenedor = new StackLayout() 
@@ -32,8 +34,7 @@ namespace ProbandoMapas.View
                     lblKm,
                     lblMillas
                 }
-            };
-
+            };            
             Content = stContenedor;
         }
 
@@ -50,12 +51,15 @@ namespace ProbandoMapas.View
             btnDistancia.SetBinding(Button.CommandProperty, new Binding("Distancia_Clicked"));
 
             lblMetros = new Label();
+            lblMetros.TextColor = Color.Accent;
             lblMetros.SetBinding(Label.TextProperty, new Binding("LblDistanciaMetros"));
 
             lblKm = new Label();
+            lblKm.TextColor = Color.Accent;
             lblKm.SetBinding(Label.TextProperty, new Binding("LblDistanciaKilometros"));
 
             lblMillas = new Label();
+            lblMillas.TextColor = Color.Accent;
             lblMillas.SetBinding(Label.TextProperty, new Binding("LblDistanciaMillas"));
         }
     }

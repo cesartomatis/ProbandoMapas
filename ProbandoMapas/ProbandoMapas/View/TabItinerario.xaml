@@ -10,7 +10,8 @@
     <viewModels:VMItinerario/>
   </ContentPage.BindingContext>
 
-  <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+  <ScrollView  Orientation = "Vertical" 
+               VerticalOptions="StartAndExpand">
 
     <StackLayout VerticalOptions="Center"
                  Orientation="Vertical"
