@@ -10,6 +10,7 @@ namespace ProbandoMapas.View
     public class MasterMainPage : MasterDetailPage
     {
         MainPage mainPage;
+        NavigationPage Detail;
 
         public MasterMainPage()
         {
@@ -30,6 +31,7 @@ namespace ProbandoMapas.View
 
                 NavigateTo(e.SelectedItem as MenuItem);
             };
+
 
             Master = mainPage;
             Detail = new NavigationPage(new WelcomePage());

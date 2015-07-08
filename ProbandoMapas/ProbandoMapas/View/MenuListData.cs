@@ -40,7 +40,7 @@ namespace ProbandoMapas.View
             {
                 Title = "Itineraries",
                 IconSource = ImageSource.FromFile("ic_clipboard_outline_white.png"),
-                TargetType = typeof(TabItinerarios)
+                TargetType = typeof(ItinerariosPage)
             });
         }
     }

@@ -11,8 +11,7 @@ namespace ProbandoMapas.View
     {
         public WelcomePage()
 		{
-            Title = "Dashboard";
-            //Icon = " ";
+            Title = "Dashboard"; 
 		}
     }
 }
