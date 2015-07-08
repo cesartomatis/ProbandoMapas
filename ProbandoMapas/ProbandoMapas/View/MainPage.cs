@@ -46,6 +46,11 @@ namespace ProbandoMapas.View
                 Orientation = StackOrientation.Vertical,
             };
 
+            if (Device.OS == TargetPlatform.iOS)
+            {
+                stContendorGral.Padding = new Thickness(0, 20, 0, 0);
+            }
+
             stContendorGral.Children.Add(CreateMenuBlock());
             stContendorGral.Children.Add(Menu);
 

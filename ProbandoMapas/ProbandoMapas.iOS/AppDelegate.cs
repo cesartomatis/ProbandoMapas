@@ -26,9 +26,6 @@ namespace ProbandoMapas.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             global::Xam.Plugin.MapExtend.iOSUnified.MapExtendRenderer.Init();
-            LoadApplication(new App());
-            Xamarin.FormsMaps.Init();
-            global::Xam.Plugin.MapExtend.iOSUnified.MapExtendRenderer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
 
