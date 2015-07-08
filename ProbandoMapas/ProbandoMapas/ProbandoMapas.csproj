@@ -41,27 +41,13 @@
     <Compile Include="ViewModel\VMClass.cs" />
     <Compile Include="ViewModel\VMListadoItinerarios.cs" />
     <Compile Include="View\ItinerariosPage.cs" />
-    <Compile Include="View\LoginPage.cs" />
     <Compile Include="View\MainPage.cs" />
-    <Compile Include="View\MainView.xaml.cs">
-      <DependentUpon>MainView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\MasterMainPage.cs" />
-    <Compile Include="View\MenuCell.cs" />
     <Compile Include="View\MenuItem.cs" />
     <Compile Include="View\MenuListData.cs" />
     <Compile Include="View\MenuListView.cs" />
-    <Compile Include="View\TabDistancias.xaml.cs">
-      <DependentUpon>TabDistancias.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\TabItinerario.xaml.cs">
       <DependentUpon>TabItinerario.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TabLocalizacion.xaml.cs">
-      <DependentUpon>TabLocalizacion.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TabMapas.xaml.cs">
-      <DependentUpon>TabMapas.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ViewCellExtend.cs" />
     <Compile Include="View\WelcomePage.cs" />
@@ -128,31 +114,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="View\TabLocalizacion.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="PluginsHelp\GeolocatorReadme.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="View\MainView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="View\TabMapas.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="View\TabDistancias.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\TabItinerario.xaml">
