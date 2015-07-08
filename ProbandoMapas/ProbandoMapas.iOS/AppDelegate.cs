@@ -15,6 +15,7 @@ namespace ProbandoMapas.iOS
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
+        //UIWindow window;
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -26,17 +27,17 @@ namespace ProbandoMapas.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             global::Xam.Plugin.MapExtend.iOSUnified.MapExtendRenderer.Init();
-            LoadApplication(new App());
             Xamarin.FormsMaps.Init();
-            global::Xam.Plugin.MapExtend.iOSUnified.MapExtendRenderer.Init();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
 
+            //UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(164, 21, 21);
+            //UINavigationBar.Appearance.TintColor = UIColor.White;
+            //UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = UIColor.White });
+            //UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, false);
+            //app.SetStatusBarStyle(UIStatusBarStyle.LightContent, false);
 
-            UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(164, 21, 21);
-            UINavigationBar.Appearance.TintColor = UIColor.White;
-            UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = UIColor.White });
-            
+
 
             return base.FinishedLaunching(app, options);
         }

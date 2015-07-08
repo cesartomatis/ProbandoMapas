@@ -21,7 +21,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>6.0</string>
+	<string>5.2</string>
 	<key>CFBundleDisplayName</key>
 	<string>ProbandoMapas</string>
 	<key>CFBundleIdentifier</key>
@@ -45,7 +45,11 @@
 	<string>We are using your location</string>
 	<key>CFBundleShortVersionString</key>
 	<string></string>
-	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleBlackOpaque</string>
+	<key>UIMainStoryboardFile</key>
+	<string>LaunchScreen</string>
+  <key>UIStatusBarStyle</key>
+  <string>UIStatusBarStyleLightContent</string>
+  <key>UIViewControllerBasedStatusBarAppearance</key>
+  <false/>
 </dict>
 </plist>
