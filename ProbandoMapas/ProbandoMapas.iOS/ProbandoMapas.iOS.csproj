@@ -138,6 +138,10 @@
       <HintPath>..\..\packages\Xam.Plugin.Geolocator.1.0.2\lib\Xamarin.iOS10\Geolocator.Plugin.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="GoogleMaps, Version=1.9.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\googlemapsios-1.9.2\lib\ios-unified\GoogleMaps.dll</HintPath>
+    </Reference>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.0.12.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.0.14\lib\Xamarin.iOS10\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
       <Private>True</Private>
@@ -197,6 +201,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PluginsHelp\GeolocatorReadme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="googlemapsios">
+      <Visible>False</Visible>
+      <Version>1.9.2</Version>
+    </XamarinComponentReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

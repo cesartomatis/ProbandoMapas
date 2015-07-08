@@ -21,6 +21,7 @@ namespace ProbandoMapas.View
         bool start;
         DateTime l;
         List<Position> lstPos;
+
         public ObservableRangeCollection<Position> polilenes { get; set; }
 
         public TabMapas()

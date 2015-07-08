@@ -5,6 +5,9 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+using Google.Maps;
+using MonoTouch;
+
 namespace ProbandoMapas.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
@@ -20,13 +23,16 @@ namespace ProbandoMapas.iOS
         //
         // You have 17 seconds to return from this method, or iOS will terminate your application.
         //
+
+        const string MapsApiKey = "AIzaSyB3KKR6S9-NLF93maEbMH8y4SgFy1x-DWs";
+
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
             //global::Xamarin.FormsMaps.Init();
             global::Xam.Plugin.MapExtend.iOSUnified.MapExtendRenderer.Init();
+            MapServices.ProvideAPIKey(MapsApiKey);
 
             return base.FinishedLaunching(app, options);
         }
