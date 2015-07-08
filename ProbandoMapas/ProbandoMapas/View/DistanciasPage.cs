@@ -34,7 +34,13 @@ namespace ProbandoMapas.View
                     lblKm,
                     lblMillas
                 }
-            };            
+            };
+
+            if (Device.OS == TargetPlatform.iOS)
+            {
+                stContenedor.Padding = new Thickness(0, 20, 0, 0);
+            }
+          
             Content = stContenedor;
         }
 

@@ -19,14 +19,14 @@ namespace ProbandoMapas.View
             {
                 Title = "Map",
                 IconSource = ImageSource.FromFile("ic_google_maps_white.png"),
-                TargetType = typeof(TabMapas)
+                TargetType = typeof(MapasPage)
             });
 
             this.Add(new MenuItem()
             {
                 Title = "Locations",
                 IconSource = ImageSource.FromFile("ic_details_white.png"),
-                TargetType = typeof(TabLocalizacion)
+                TargetType = typeof(LocalizacionPage)
             });
 
             this.Add(new MenuItem()

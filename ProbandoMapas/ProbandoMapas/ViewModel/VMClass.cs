@@ -19,7 +19,7 @@ namespace ProbandoMapas.ViewModel
         private string _AdressLabel;
         private string _GetAdressLabel;
 
-        private List<string> _LvLista;
+        private List<string> _LvDatos;
         private string _PosUno;
         private string _PosDos;
         private string _LblDistanciaMetros;
@@ -27,6 +27,19 @@ namespace ProbandoMapas.ViewModel
         private string _LblDistanciaMillas;
 
         PosicionamientoLogica plObj;
+
+        public List<string> LvDatos
+        {
+            get
+            {
+                return _LvDatos;
+            }
+            set
+            {
+                _LvDatos = value;
+                OnPropertyChanged("LvDatos");
+            }
+        }
 
         public string LblDistanciaMillas
         {
@@ -135,7 +148,13 @@ namespace ProbandoMapas.ViewModel
 
             GetCoords = new Command(GetCoordsEvent);
             GetAdress = new Command(GetandShowAdress);
+            Rellenador = new Command(GetListaCercanias);
             Distancia_Clicked = new Command(GetDistancia);
+        }
+
+        private async void GetListaCercanias()
+        {
+            LvDatos = await plObj.GetListado();
         }
 
         private async void GetCoordsEvent()
