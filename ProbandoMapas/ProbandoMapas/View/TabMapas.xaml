@@ -46,7 +46,7 @@
       <Entry x:Name="txtDestino"
              Placeholder="Ingresar destino..."/>
 
-      <Button Text="Colocar pines"
+      <Button Text="Draw map"
               Clicked="DibujarMapa_OnClicked"/>
 
       <Label x:Name="lblError"
