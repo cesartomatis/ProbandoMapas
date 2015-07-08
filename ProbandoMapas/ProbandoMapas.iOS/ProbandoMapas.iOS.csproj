@@ -55,7 +55,11 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
+    <CodesignProvision />
+    <CodesignResourceRules />
+    <CodesignExtraArgs />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -197,6 +201,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PluginsHelp\GeolocatorReadme.txt" />
+    <BundleResource Include="Resources\exit_to_app.png" />
+    <BundleResource Include="Resources\fotoperfil.png" />
+    <BundleResource Include="Resources\ic_clipboard_outline_white.png" />
+    <BundleResource Include="Resources\ic_details_white.png" />
+    <BundleResource Include="Resources\ic_google_maps_white.png" />
+    <BundleResource Include="Resources\ic_home_variant_white.png" />
+    <BundleResource Include="Resources\ic_map_marker_multiple_white.png" />
+    <BundleResource Include="Resources\settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

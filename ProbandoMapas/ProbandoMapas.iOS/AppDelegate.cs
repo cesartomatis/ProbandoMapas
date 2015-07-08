@@ -4,6 +4,8 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using ImageCircle.Forms.Plugin.iOS;
+using Xam.Plugin.MapExtend.iOSUnified;
 
 namespace ProbandoMapas.iOS
 {
@@ -24,10 +26,15 @@ namespace ProbandoMapas.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             Xamarin.FormsMaps.Init();
+            global::Xam.Plugin.MapExtend.iOSUnified.MapExtendRenderer.Init();
+            ImageCircleRenderer.Init();
             LoadApplication(new App());
 
-            //global::Xamarin.FormsMaps.Init();
-            global::Xam.Plugin.MapExtend.iOSUnified.MapExtendRenderer.Init();
+
+            UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(164, 21, 21);
+            UINavigationBar.Appearance.TintColor = UIColor.White;
+            UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = UIColor.White });
+            
 
             return base.FinishedLaunching(app, options);
         }
