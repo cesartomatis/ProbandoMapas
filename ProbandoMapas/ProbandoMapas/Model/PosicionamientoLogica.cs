@@ -24,7 +24,7 @@ namespace ProbandoMapas.Model
         {
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 5;
-            var position = await locator.GetPositionAsync(timeout: 10000);
+            var position = await locator.GetPositionAsync(timeout: 50000);
 
             return "Lat" + position.Latitude.ToString() + "Long" + position.Longitude.ToString();
         }
@@ -33,7 +33,7 @@ namespace ProbandoMapas.Model
         {
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 5;
-            var position = await locator.GetPositionAsync(timeout: 10000);
+            var position = await locator.GetPositionAsync(timeout: 50000);
 
             var pos = new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude);
 
@@ -84,7 +84,7 @@ namespace ProbandoMapas.Model
         {
             var locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 5;
-            var position = await locator.GetPositionAsync(timeout: 10000);
+            var position = await locator.GetPositionAsync(timeout: 50000);
 
             var pos = new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude);
 

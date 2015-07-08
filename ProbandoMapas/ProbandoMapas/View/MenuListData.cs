@@ -19,28 +19,28 @@ namespace ProbandoMapas.View
             {
                 Title = "Map",
                 IconSource = ImageSource.FromFile("ic_google_maps_white.png"),
-                TargetType = typeof(TabMapas)
+                TargetType = typeof(MapasPage)
             });
 
             this.Add(new MenuItem()
             {
                 Title = "Locations",
                 IconSource = ImageSource.FromFile("ic_details_white.png"),
-                TargetType = typeof(TabLocalizacion)
+                TargetType = typeof(LocalizacionPage)
             });
 
             this.Add(new MenuItem()
             {
                 Title = "Distances",
                 IconSource = ImageSource.FromFile("ic_map_marker_multiple_white.png"),
-                TargetType = typeof(TabDistancias)
+                TargetType = typeof(DistanciasPage)
             });
 
             this.Add(new MenuItem()
             {
                 Title = "Itineraries",
                 IconSource = ImageSource.FromFile("ic_clipboard_outline_white.png"),
-                TargetType = typeof(TabItinerarios)
+                TargetType = typeof(ItinerariosPage)
             });
         }
     }
