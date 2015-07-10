@@ -25,7 +25,7 @@ namespace ProbandoMapas.iOS
         // You have 17 seconds to return from this method, or iOS will terminate your application.
         //
 
-        const string MapsApiKey = "AIzaSyDMB-HU3Q1LDMT6zdOiqvTCG3pjf9q5JVc";
+        const string MapsApiKey = "AIzaSyB5H3jo03-2bDv_ubewdniigibEofMboMQ";
 
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {

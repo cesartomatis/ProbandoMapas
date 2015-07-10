@@ -23,7 +23,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>ProbandoMapas</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.ProbandoMapas</string>
+	<string>com.aajtech.probandomapas</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>
