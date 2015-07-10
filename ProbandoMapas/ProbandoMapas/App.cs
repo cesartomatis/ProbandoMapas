@@ -13,7 +13,7 @@ namespace ProbandoMapas
         public App()
         {
             // The root page of your application
-            MainPage = new LoginPage();
+            MainPage = new MasterMainPage();
         }
 
         protected override void OnStart()

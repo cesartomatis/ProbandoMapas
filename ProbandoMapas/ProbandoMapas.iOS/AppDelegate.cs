@@ -31,9 +31,9 @@ namespace ProbandoMapas.iOS
             ImageCircleRenderer.Init();
             LoadApplication(new App());
 
-            //UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(164, 21, 21);
-            //UINavigationBar.Appearance.TintColor = UIColor.White;
-            //UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = UIColor.White });
+            UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(244, 68, 54);
+            UINavigationBar.Appearance.TintColor = UIColor.White;
+            UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = UIColor.White });
             //UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, false);
             //app.SetStatusBarStyle(UIStatusBarStyle.LightContent, false);
 
