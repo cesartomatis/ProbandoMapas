@@ -10,7 +10,6 @@ namespace ProbandoMapas.View
     public class MasterMainPage : MasterDetailPage
     {
         MainPage mainPage;
-        NavigationPage Detail;
 
         public MasterMainPage()
         {

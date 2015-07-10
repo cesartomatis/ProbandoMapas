@@ -37,7 +37,7 @@ namespace ProbandoMapas.View
             if (isSelected)
             {
                 //BackgroundColor = Color.FromRgb( 0.20, 0.20, 1.0 );
-                BackgroundColor = Color.Accent;
+                BackgroundColor = Color.FromHex("#EF9A9A");
             }
             else
             {

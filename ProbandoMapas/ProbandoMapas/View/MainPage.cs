@@ -18,13 +18,13 @@ namespace ProbandoMapas.View
         {
             Icon = "settings.png";
             Title = "menu"; // The Title property must be set.
-            BackgroundColor = Color.FromHex("333333");
+            BackgroundColor = Color.FromHex("#F44336");
 
             Menu = new MenuListView();
 
             menuImage = new CircleImage
             {
-                BorderColor = Color.White,
+                BorderColor = Color.FromHex("#FFEBEE"),
                 BorderThickness = 3,
                 HeightRequest = 75,
                 WidthRequest = 75,
@@ -37,6 +37,7 @@ namespace ProbandoMapas.View
             {
                 FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
                 FontAttributes = FontAttributes.Bold,
+                TextColor = Color.White,
                 Text = "Pablo Gil",
             };
 
@@ -63,8 +64,10 @@ namespace ProbandoMapas.View
             return new Frame
             {
                 OutlineColor = Color.Transparent,
+                BackgroundColor = Color.Transparent,
                 Content = new StackLayout
                 {
+                    
                     Orientation = StackOrientation.Horizontal,
                     VerticalOptions = LayoutOptions.FillAndExpand,
                     HorizontalOptions = LayoutOptions.FillAndExpand,

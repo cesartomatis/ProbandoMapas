@@ -15,7 +15,10 @@ namespace ProbandoMapas.View
 
         public ViewCellExtend()
         {
-            menuText = new Label();
+            menuText = new Label
+            {
+                TextColor = Color.White
+            };
             menuImagen = new Image()
             {
                 Aspect = Aspect.AspectFit,
