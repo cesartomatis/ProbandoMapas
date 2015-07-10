@@ -43,6 +43,7 @@
     <Compile Include="View\DistanciasPage.cs" />
     <Compile Include="View\ItinerariosPage.cs" />
     <Compile Include="View\LocalizacionPage.cs" />
+    <Compile Include="View\LoginPage.cs" />
     <Compile Include="View\MainPage.cs" />
     <Compile Include="View\MapasPage.cs" />
     <Compile Include="View\MasterMainPage.cs" />
@@ -51,9 +52,6 @@
     <Compile Include="View\MenuListView.cs" />
     <Compile Include="View\TabItinerario.xaml.cs">
       <DependentUpon>TabItinerario.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TabItinerarios.xaml.cs">
-      <DependentUpon>TabItinerarios.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ViewCellExtend.cs" />
     <Compile Include="View\WelcomePage.cs" />
@@ -121,12 +119,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PluginsHelp\GeolocatorReadme.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="View\TabItinerarios.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\TabItinerario.xaml">

@@ -6,6 +6,7 @@ using Foundation;
 using UIKit;
 using ImageCircle.Forms.Plugin.iOS;
 using Xam.Plugin.MapExtend.iOSUnified;
+using Google.Maps;
 
 namespace ProbandoMapas.iOS
 {
@@ -23,8 +24,13 @@ namespace ProbandoMapas.iOS
         //
         // You have 17 seconds to return from this method, or iOS will terminate your application.
         //
+
+        const string MapsApiKey = "AIzaSyDMB-HU3Q1LDMT6zdOiqvTCG3pjf9q5JVc";
+
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            MapServices.ProvideAPIKey(MapsApiKey);
+
             global::Xamarin.Forms.Forms.Init();
             global::Xam.Plugin.MapExtend.iOSUnified.MapExtendRenderer.Init();
             Xamarin.FormsMaps.Init();
